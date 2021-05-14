@@ -5,9 +5,15 @@
     margin: 0;
 }
 
+html{
+    min-height: 100%;
+    position: relative;
+}
+
 body{
     font-family: 'Hind', sans-serif;
     height: 100%;
+    margin-bottom: 40px;
 }
 
 
@@ -44,10 +50,11 @@ body{
 #color-blue{
     color: rgb(10, 108, 255) !important;
     font-size: 25px;
+    font-weight: 800;
 }
 
 #color-blue:hover{
-    color: rgb(168, 0, 0) !important;
+    color: rgb(253, 25, 25) !important;
 }
 
 #navbar ul a{
@@ -80,7 +87,10 @@ header{
 
 header h1{
     /* offset-x | offset-y | blur-radius | color */
-    box-shadow: 10px 5px 5px rgba(53, 53, 53, 0.432); 
+    /* 10px 5px 5px rgba(53, 53, 53, 0.432) */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26); 
+    font-weight: bold;
+    font-size: 50px;
 } 
 /* CABECERA */
 
@@ -89,7 +99,7 @@ header h1{
 
 #contenedor-padre{
     display: inline-flex;
-    margin: 2% 10% 5% 10%;
+    margin: 2% 10% 15% 10%;
     padding: 2%;
     border: 1px ridge #d8d8d8;
     width: 75%;
@@ -123,6 +133,7 @@ header h1{
 
 #caja-izquierda div li{
     list-style: none;
+    font-size: 17px;
 }
 
 /*------------------------*/
@@ -130,6 +141,11 @@ header h1{
 #caja-derecha{
     width: 75%;
     color: #5B5C60;
+}
+
+#caja-derecha p{
+    text-align: justify;
+    font-size: 17px;
 }
 
 .habilidades-duras{
@@ -143,7 +159,7 @@ header h1{
 }
 
 .ancho-parrafo{
-    width: 60px;
+    width: 80px;
 }
 
 #porcentaje{
@@ -198,3 +214,128 @@ header h1{
 
 
 /* --------------------------------INDEX---------------------------- */
+
+
+
+/* ----------------------------CONTACTO--------------------------------- */
+
+#formulario{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 40%;
+    margin-top: 2%;
+    margin-bottom: 15%;
+    border: 2px ridge #0076fd46;
+    border-radius: 10px;
+    background-color: #1E1F26;
+    padding: 2%;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#formulario div{
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario div input, textarea{
+    border-radius: 10px;
+    height: 30px;
+    border: 1px ridge #0076fd46;
+    outline: #0076fd;
+    font-size: 17px;
+}
+
+textarea{
+    height: 100px;
+}
+
+#formulario div input[type=submit]{
+    background-color: #3191ff;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+input[type=submit]{
+    cursor: pointer;
+}
+
+/* ----------------------------CONTACTO--------------------------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --------------------------------FOOTER------------------------------ */
+footer{
+    width: 100%;
+    height: 150px;
+    background-color: #1E1F26;
+    bottom: 0;
+    position: absolute;
+    margin-top: 5%;
+}
+
+#footer-redes-sociales{
+    display: inline-flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-redes-sociales div{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#footer-redes-sociales img{
+    width: 40px;
+}
+
+#footer-redes-sociales img:hover{
+    transform: scale(1.5);
+}
