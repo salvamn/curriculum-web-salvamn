@@ -42,7 +42,8 @@ body{
 }
 
 #color-blue{
-    color: rgb(10, 108, 255) !important;;
+    color: rgb(10, 108, 255) !important;
+    font-size: 25px;
 }
 
 #color-blue:hover{
